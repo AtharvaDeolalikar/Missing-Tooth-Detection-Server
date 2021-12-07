@@ -505,7 +505,7 @@ def missingTooth(coordinate, img_name):
     return "Done!!!" '''
 
 def toothDetection(img_name):
-  img="/content/"+ img_name
+  img= img_name
   img = cv2.imread(img)       
   i1,i2,i3=cv2.split(img)     
   img = cv2.resize(i1, (512, 512))
